@@ -13,6 +13,7 @@ struct ProjectSummary: Identifiable {
     let title: String
     let subtitle: String
     let icon: String
+    let destination: AppDestination
 }
 
 extension ProjectSummary {
@@ -20,42 +21,50 @@ extension ProjectSummary {
         ProjectSummary(
             title: "Calculator",
             subtitle: "Basic arithmetic",
-            icon: "plus.forwardslash.minus"
+            icon: "plus.forwardslash.minus",
+            destination: .calculator
         ),
         ProjectSummary(
             title: "Unit Converter",
             subtitle: "Length • Weight • Temp",
-            icon: "arrow.left.arrow.right"
+            icon: "arrow.left.arrow.right",
+            destination: .unitConverter
         ),
         ProjectSummary(
             title: "Notes",
             subtitle: "SwiftData notes",
-            icon: "note.text"
+            icon: "note.text",
+            destination: .notes
         ),
         ProjectSummary(
             title: "Habit Tracker",
             subtitle: "Track consistency",
-            icon: "checkmark.circle"
+            icon: "checkmark.circle",
+            destination: .habitTracker
         ),
         ProjectSummary(
             title: "Expense Tracker",
             subtitle: "Manage spending",
-            icon: "creditcard"
+            icon: "creditcard",
+            destination: .expenseTracker
         ),
         ProjectSummary(
             title: "Weather",
             subtitle: "Live forecasts",
-            icon: "cloud.sun.fill"
+            icon: "cloud.sun.fill",
+            destination: .weather
         ),
         ProjectSummary(
             title: "Maps",
             subtitle: "Explore locations",
-            icon: "map.fill"
+            icon: "map.fill",
+            destination: .maps
         ),
         ProjectSummary(
             title: "Photo Gallery",
             subtitle: "Swift Photos",
-            icon: "photo.on.rectangle"
+            icon: "photo.on.rectangle",
+            destination: .photoGallery
         )
     ]
 }

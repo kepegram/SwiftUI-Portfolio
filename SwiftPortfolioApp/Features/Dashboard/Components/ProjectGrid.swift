@@ -12,13 +12,16 @@ struct ProjectGrid: View {
 
     private let columns = [
         GridItem(.flexible()),
-        GridItem(.flexible())
+        GridItem(.flexible()),
     ]
 
     var body: some View {
         LazyVGrid(columns: columns, spacing: 16) {
             ForEach(projects) { project in
-                ProjectCard(project: project)
+                NavigationLink(value: project.destination) {
+                    ProjectCard(project: project)
+                }
+                .buttonStyle(.plain)
             }
         }
     }

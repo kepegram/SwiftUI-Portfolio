@@ -19,6 +19,26 @@ struct DashboardView: View {
                 .padding()
             }
             .navigationTitle("Projects")
+            .navigationDestination(for: AppDestination.self) { destination in
+                switch destination {
+                case .calculator:
+                    CalculatorView()
+                case .unitConverter:
+                    Text("Unit Converter")
+                case .notes:
+                    Text("Notes")
+                case .habitTracker:
+                    Text("Habit Tracker")
+                case .expenseTracker:
+                    Text("Expense Tracker")
+                case .weather:
+                    Text("Weather")
+                case .maps:
+                    Text("Maps")
+                case .photoGallery:
+                    Text("Photo Gallery")
+                }
+            }
         }
     }
 }

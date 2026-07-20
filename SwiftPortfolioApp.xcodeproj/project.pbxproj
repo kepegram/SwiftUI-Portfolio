@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		DC601BC8300A76550023B4CC /* SwiftPortfolioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPortfolioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC601BC8300A76550023B4CC /* SwiftPortfolioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SwiftPortfolioApp.app; path = "/Users/kadinpegram/Desktop/SwiftPortfolioApp/build/Debug-iphoneos/SwiftPortfolioApp.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,16 +33,7 @@
 			isa = PBXGroup;
 			children = (
 				DC601BCA300A76550023B4CC /* SwiftPortfolioApp */,
-				DC601BC9300A76550023B4CC /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		DC601BC9300A76550023B4CC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DC601BC8300A76550023B4CC /* SwiftPortfolioApp.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +86,7 @@
 			mainGroup = DC601BBF300A76550023B4CC;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = DC601BC9300A76550023B4CC /* Products */;
+			productRefGroup = DC601BBF300A76550023B4CC;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

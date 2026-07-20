@@ -34,7 +34,7 @@ struct ProjectCard: View {
 }
 
 #Preview {
-    let sample = ProjectSummary.catalog.first ?? ProjectSummary(title: "Sample", subtitle: "Preview", icon: "star.fill")
+    let sample = ProjectSummary.catalog.first ?? ProjectSummary(title: "Sample", subtitle: "Preview", icon: "star.fill", destination: .calculator)
     ProjectCard(project: sample)
         .padding()
 }

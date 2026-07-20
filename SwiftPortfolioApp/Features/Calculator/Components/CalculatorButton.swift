@@ -1,0 +1,35 @@
+//
+//  File.swift
+//  SwiftPortfolioApp
+//
+//  Created by Kadin Pegram on 7/20/26.
+//
+
+import SwiftUI
+
+struct CalculatorButton: View {
+    let button: CalculatorButtonItem
+    let action: (String) -> Void
+
+    var body: some View {
+        Button {
+            action(button.title)
+        } label: {
+            Text(button.title)
+                .font(.title2.weight(.medium))
+                .frame(maxWidth: .infinity)
+                .frame(height: 72)
+                .background(button.color.opacity(0.18))
+                .foregroundStyle(button.color)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+        }
+        .buttonStyle(.plain)
+    }
+}
+
+#Preview {
+    CalculatorButton(
+        button: .init(title: "7", color: .secondary)
+    ) { _ in }
+    .padding()
+}
