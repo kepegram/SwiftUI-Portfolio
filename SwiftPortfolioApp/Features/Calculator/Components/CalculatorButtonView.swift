@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct CalculatorButton: View {
+struct CalculatorButtonView: View {
     let button: CalculatorButtonItem
+    let isSelected: Bool
     let action: (String) -> Void
 
     var body: some View {
@@ -19,8 +20,8 @@ struct CalculatorButton: View {
                 .font(.title2.weight(.medium))
                 .frame(maxWidth: .infinity)
                 .frame(height: 72)
-                .background(button.color.opacity(0.18))
-                .foregroundStyle(button.color)
+                .background(isSelected ? button.color : button.color.opacity(0.18))
+                .foregroundStyle(isSelected ? Color.white : button.color)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
         }
         .buttonStyle(.plain)
@@ -28,8 +29,9 @@ struct CalculatorButton: View {
 }
 
 #Preview {
-    CalculatorButton(
-        button: .init(title: "7", color: .secondary)
+    CalculatorButtonView(
+        button: .init(title: "7", color: .secondary),
+        isSelected: false
     ) { _ in }
     .padding()
 }
