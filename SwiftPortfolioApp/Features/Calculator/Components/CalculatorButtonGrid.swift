@@ -21,7 +21,7 @@ struct CalculatorButtonGrid: View {
     var body: some View {
         VStack(spacing: 12) {
             ForEach(CalculatorButtonItem.buttons.indices, id: \.self) { row in
-                if row == 4 {
+                if CalculatorButtonItem.buttons[row].count == 3 {
                     GeometryReader { geometry in
                         let standardButtonWidth = (geometry.size.width - 36) / 4
                         let expandedButtonWidth = (geometry.size.width - standardButtonWidth - 24) / 2

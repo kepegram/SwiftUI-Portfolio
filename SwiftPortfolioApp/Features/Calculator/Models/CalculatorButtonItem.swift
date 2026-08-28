@@ -18,7 +18,6 @@ extension CalculatorButtonItem {
         [
             .init(title: "AC", color: .gray),
             .init(title: "+/-", color: .gray),
-            .init(title: "%", color: .gray),
             .init(title: "÷", color: .orange)
         ],
         [

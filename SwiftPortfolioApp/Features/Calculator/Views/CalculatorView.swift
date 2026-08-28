@@ -43,6 +43,12 @@ struct CalculatorView: View {
 
                 case "÷":
                     engine.selectOperation(.division)
+                
+                case "+/-":
+                    engine.toggleSign()
+                    
+                case "=":
+                    engine.equals()
                     
                 case let digit
                 where digit.count == 1 && digit.first?.isNumber == true:
